@@ -4,7 +4,7 @@
 #### Esialgne plaan
 
 
-Plaan teha ttp publiku lemmiku rakendus
+Plaan teha Tartu Tudengipäevade  publiku lemmiku rakendus
 
 programmi baas lihtne võtab failist nimed ja esitab need kasutajale valikuna, iga kasutaja valik salvestatakse teise faili. Hääletusperioodi lõppus saab sealt failist näha palju kellegi poolt on hääletatud.
 
