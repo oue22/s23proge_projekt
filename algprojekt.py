@@ -15,7 +15,7 @@ def failist_sõnastikku(fnimi):
     return sonastik
     
 def hääleta_ja_salvesta(andmed, lõpp_kuupäev):
-    #hääletamise lõppemine kuupäev
+    #Et inimesed ei saaks peale lõppkuupäeva hääletada
     if datetime.now() >= lõpp_kuupäev:
         print("Hääletamine on lõppenud.")
         return
@@ -41,4 +41,5 @@ def hääleta_ja_salvesta(andmed, lõpp_kuupäev):
 
 failinimi = 'proje.txt'
 andmed = failist_sõnastikku(failinimi)
-hääleta_ja_salvesta(andmed)
+lõpp_kuupäev = datetime(2023, 12, 14)
+hääleta_ja_salvesta(andmed, lõpp_kuupäev)
