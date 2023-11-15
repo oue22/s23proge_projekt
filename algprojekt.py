@@ -1,3 +1,9 @@
+
+#Funktsioon võitja leidmiseks
+def voitja(fnimi):
+    return max(failist_sõnastikku(fnimi))
+
+#Funktsioon failist osalejate lugemiseks ja sõnastikku kirjutamiseks.
 def failist_sõnastikku(fnimi):
     sonastik = {}
     with open(fnimi, 'r', encoding='utf-8') as fail:
