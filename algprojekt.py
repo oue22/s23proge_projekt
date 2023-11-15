@@ -14,9 +14,12 @@ def failist_sõnastikku(fnimi):
               sonastik[osaleja] = int(arv) 
     return sonastik
     
-
-
-def hääleta_ja_salvesta(andmed):
+def hääleta_ja_salvesta(andmed, lõpp_kuupäev):
+    #hääletamise lõppemine kuupäev
+    if datetime.now() >= lõpp_kuupäev:
+        print("Hääletamine on lõppenud.")
+        return
+    
     print("Hääleta oma lemmiku poolt:")
     for i, (osaleja, arv) in enumerate(andmed.items(), start=1):
         print(str(i) + '. ' + osaleja)
@@ -34,6 +37,7 @@ def hääleta_ja_salvesta(andmed):
                 fail.write(osaleja + ',' + str(arv) + '\n')
     else:
         print("Vigane valik.")
+
 
 failinimi = 'proje.txt'
 andmed = failist_sõnastikku(failinimi)
