@@ -1,4 +1,4 @@
-
+from datetime import datetime
 #Funktsioon võitja leidmiseks
 def voitja(fnimi):
     return max(failist_sõnastikku(fnimi))
