@@ -1,0 +1,4 @@
+valdis,0
+madis,5
+janno,2
+serks,1
